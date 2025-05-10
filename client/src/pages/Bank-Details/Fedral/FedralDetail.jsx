@@ -10,7 +10,7 @@ import { useParams } from "react-router-dom";
 export const Fed = () => {
   const dispatch = useDispatch();
   const { id } = useParams();
-  const data = useSelector((state) => state.iciciHFC.singleData);
+  const data = useSelector((state) => state.Fedral.singleData);
 
   useEffect(() => {
     if (id) {
