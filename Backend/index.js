@@ -9,7 +9,8 @@ const iciciBankRoutes = require("./Routes/iciciBankRoutes");
 const piramalRoutes = require("./Routes/piramalRoute");
 const icichfcRoutes = require("./Routes/iciciHFCRoute")
 const SamstaflnRoute = require("./Routes/SamstaflnRoute");
-const FedralRoute = require("./Routes/FedralRoute")
+const FedralRoute = require("./Routes/FedralRoute");
+const ProtiumRoute = require("./Routes/ProtiumRoute")
 const bodyParser = require("body-parser");
 
 const app = express();
@@ -39,7 +40,8 @@ app.use("/api/icici-bank", iciciBankRoutes);
 app.use("/api/piramal", piramalRoutes);
 app.use("/api/icichfc", icichfcRoutes) // Add this line to include piramalRoutes
 app.use("/api/samstafln", SamstaflnRoute)
-app.use("/api/fedral", FedralRoute )
+app.use("/api/fedral", FedralRoute );
+app.use("/api/protium", ProtiumRoute)
 // Start server
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);

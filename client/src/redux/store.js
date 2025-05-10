@@ -6,6 +6,7 @@ import iciciBankReducer from "./features/IciciBank/iciciBankSlice";
 import iciciHFCReducer from "./features/IciciHfCBank/iciciHFCBankSlice"; 
 import FedralReducer from "./features/FedralBankForm/FedralBankSlice"; 
 import SamstaFlnReducer from "./features/SamstaflnBankForm/SamstaflnBankSlice";
+import protiumReducer from "./features/Protium/ProtiumBankSlice";
 // Adjust the import path as necessary
 // Adjust the import path as necessary
 
@@ -17,7 +18,8 @@ export const store = configureStore({
     primal: primalReducer,
     iciciHFC: iciciHFCReducer,
     Fedral: FedralReducer,
-    Samsta:  SamstaFlnReducer
+    Samsta:  SamstaFlnReducer,
+    protium : protiumReducer
     
   },
 });
