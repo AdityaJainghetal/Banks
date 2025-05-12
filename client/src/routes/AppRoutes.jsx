@@ -18,7 +18,8 @@ import SamstaFln from "../pages/Bank-Details/SamstaFln/SamstaFlnDetails";
 import FedralBankForm from "../pages/FedralForm/FedralBankForm";
 import Fed from "../pages/Bank-Details/Fedral/FedralDetail";
 import ProtiumForm from "../pages/ProtiumForm/ProtiumForm";
-import ProtiumBank from "../pages/ProtiumDetail/ProtiumDetail";
+
+import ProtiumDeatil from "../pages/ProtiumDetail/ProtiumDetail";
 
 const AppRoutes = () => {
   return (
@@ -48,7 +49,7 @@ const AppRoutes = () => {
           <Route path="/bank/federal-bank" element={<FedralBankForm/>}/>
           <Route path="/bank/fedral/:id" element={<Fed/>}/>
           <Route path="/bank/protium" element={<ProtiumForm/>}/>
-          <Route path="/bank/protium/:id" element={<ProtiumBank/>}/>
+          <Route path="/bank/protium/:id" element={<ProtiumDeatil/>}/>
 
 
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
 import * as XLSX from 'xlsx';
@@ -6,8 +6,7 @@ import { saveAs } from 'file-saver';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { getProtiumBankById } from '../../redux/features/Protium/ProtiumBankThunk';
-
-const ProtiumBank = () => {
+const ProtiumDeatil = () => {
   const handleExportPDF = () => {
     const input = document.getElementById('reportTable');
     html2canvas(input, { scale: 2, useCORS: true }).then(canvas => {
@@ -731,4 +730,4 @@ const ProtiumBank = () => {
   )
 }
 
-export default ProtiumBank;
+export default ProtiumDeatil;
